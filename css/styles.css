@@ -69,7 +69,7 @@ footer .social-links {
 }
 .toggle-theme ul::before {
   content: "";
-  background-image: url("../img/Polygon-black .svg");
+  background-image: url("../img/Polygon-white.svg");
   background-repeat: no-repeat;
   background-position: top 50%  right 50%;
   /* border: 1px solid red; */
