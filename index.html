@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Блог копирайтера Анны</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+
+
+    <header class="main-header index-header">
+      <h1 class="visually-hidden">Блог копирайтера Анны</h1>
+      <nav class="site-navigation">
+        <a href="#" class="main-header-logo">
+          <img src="img/logo.svg" alt="Логотип Блога копирайтера">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="#articles">Статьи</a></li>
+          <li><a href="#about-me">Обо мне</a></li>
+          <li><a href="#portfolio">Портфолио</a></li>
+          <li><a href="#tell-me">Написать мне</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+
+
+
+    <main class="container">
+      <div class="container-wrap">
+      <section class="toggle-theme">
+        <h2 class="visually-hidden">Переключатель темы</h2>
+        <!-- <a href="#">Выбрыть тему</a> -->
+        <ul>Выбрыть тему
+        <li></li>
+        <li>
+          <form class="filter" action="index.html" method="post">
+            <label><input class="filter-chk" data-category="travels" type="checkbox"> Путешествия</label>
+            <label><input class="filter-chk" data-category="city" type="checkbox"> Город</label>
+            <label><input class="filter-chk" data-category="books" type="checkbox"> Книги</label>
+            <label><input class="filter-chk" data-category="photos" type="checkbox"> Фотография</label>
+            <label><input class="filter-chk" data-category="recipes" type="checkbox"> Рецепты</label>
+            <hr>
+            <label><input class="filter-chk" data-category="all" type="checkbox"> Все статьи</label>
+          </form>
+        </li>
+        <!-- <li>Статья</li>
+        <li>Статья</li>
+        <li>Статья</li> -->
+      </ul>
+
+      </section>
+
+      <section class="all-articles">
+        <h2 id="articles" >Все статьи</h2>
+        <div class="all-articles-wrap">
+          <div class="article-preview-small article-for-filter" data-category="travels">
+            <a class="art-href-small" href="article.html">
+              <h3>Путешествие в Берлин в августе </h3>
+            </a>
+            <div class="img-of-preview" onclick="location.href='article.html'"></div>
+            <p>Летний месяц я провела в столице Германии вместе с друзьями. И вот как это было!</p>
+            <span class="tegs-of-preview">Теги: путешествия</span>
+            <span class="date-of-preview">29.09.2020</span>
+          </div>
+          <div class="article-preview-small article-for-filter" data-category="city">
+            <a class="art-href-small" href="article.html">
+              <h3>Где выпить колдбрю в Москве</h3>
+            </a>
+            <div class="img-of-preview" onclick="location.href='article.html'"></div>
+            <p>Собрала для вас список любимых кофеен, где подают лучший летний напиток.</p>
+            <span class="tegs-of-preview">Теги: город</span>
+            <span class="date-of-preview">24.07.2020</span>
+          </div>
+          <div class="article-preview-small article-for-filter" data-category="books">
+            <a class="art-href-small" href="article.html">
+              <h3>Прочитано: книжные рекомендации</h3>
+            </a>
+            <div class="img-of-preview" onclick="location.href='article.html'"></div>
+            <p>Рассказываю о прочитанных за последнее время книгах: фавориты и провалы.</p>
+            <span class="tegs-of-preview">Теги: книги</span>
+            <span class="date-of-preview">15.07.2020</span>
+          </div>
+          <!-- <div class="article-preview-small">
+            <div class="img-of-preview"></div>
+            <h3>Где выпить колдбрю в Москве</h3>
+            <p>Собрала для вас список любимых кофеен, где подают лучший летний напиток.</p>
+            <span class="tegs-of-preview">Теги: город</span>
+            <span class="date-of-preview">24.07.2020</span>
+            <a class="art-href-small" href="article.html"></a>
+          </div>
+          <div class="article-preview-small">
+            <div class="img-of-preview"></div>
+            <h3>Прочитано: книжные рекомендации</h3>
+            <p>Рассказываю о прочитанных за последнее время книгах: фавориты и провалы.</p>
+            <span class="tegs-of-preview">Теги: книги</span>
+            <span class="date-of-preview">15.07.2020</span>
+            <a class="art-href-small" href="article.html"></a>
+          </div> -->
+          <div class="article-preview-big article-for-filter" data-category="photos">
+            <div class="for-flex">
+              <div class="img-of-preview"></div>
+              <h3>Снимки на плёнку</h3>
+              <p>Поделилась с вами весенними фотографиями, и секретами удачных снимков.</p>
+              <span class="tegs-of-preview">Теги: фотографии</span>
+              <span class="date-of-preview">29.06.2020</span>
+              <a class="art-href-big" href="article.html"></a>
+            </div>
+          </div>
+          <div class="article-preview-big article-for-filter" data-category="recipes">
+            <div class="for-flex">
+              <div class="img-of-preview"></div>
+              <h3>Домашний чизкейк</h3>
+              <p>Что может быть лучше чизкейка с сезонными ягодами? Только домашний чизкейк!</p>
+              <span class="tegs-of-preview">Теги: рецепты</span>
+              <span class="date-of-preview">24.06.2020</span>
+              <a class="art-href-big" href="article.html"></a>
+            </div>
+
+
+
+          </div>
+        </div>
+        <a href="#" class="show-more show-more-article">Показать ещё</a>
+        <div class="brmm"></div>
+      </section>
+
+      <section class="about-me">
+        <h2 id="about-me" >Обо мне</h2>
+        <div class="about-me-flex">
+        <img class="about-me-img" src="img/about-me.jpg" alt="Моё фото">
+          <div class="about-me-flex-p">
+          <p>Всем привет! Меня зовут Аня, и это мой личный блог. Здесь ты найдёшь рассказы о моих путешествиях, снимки на плёнку, рецепты, обзоры на книги. В общем, тексты о том, что мне инетресно.
+          <br><br>
+            Я работаю копирайтером, поэтому мой блоге — это ещё и моё
+            портфолио. Ниже размещены несколько моих лучших
+            рабочих текстов. Буду рада новым сотрудничествам! Если вы хотите написать мне — это можно сделать в соцсетях
+            или через форму. Всегда приятно услышать обратную связь
+            от читателей и познакомиться поближе.<br><br>
+          Приятного чтения!
+          <p class="about-me-quote">Я верю, что каждый раз пробуя новое, выходящее за зону моего комфорта, я действительно узнаю настояющую себя. </p>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="portfolio">
+        <h2 id="portfolio" >Портфолио</h2>
+        <div class="portfolio-item-flex">
+          <div class="portfolio-item">
+            <p class="portfolio-item-location">Блог HTML Academy</p>
+            <h3>«Как учиться продуктивно»</h3>
+
+            <p>Про основные методы обучения,
+  которые помогут быстро и надолго
+  запомнить информацию.</p>
+          </div>
+          <div class="portfolio-item">
+            <p class="portfolio-item-location">Журнал «LNK»</p>
+            <h3>«Зачем поцели нужны человеку?
+  И какие они бывают»</h3>
+
+            <p>Поцелуи — повсеместная ежедневная
+  практика. Но зачем люди целуются?
+  Какие смысли вкладывают в этот ритуал?
+  И где корни этой практики?</p>
+          </div>
+          <div class="portfolio-item">
+            <p class="portfolio-item-location">Журнал «Т — Л»</p>
+            <h3>«Советы по эффективной
+  удалённой работе»</h3>
+
+            <p>Поделилась лайфхаками, которые помогают
+  мне работать продуктивно из дома. </p>
+          </div>
+        </div>
+        <a href="#" class="show-more">Показать ещё</a>
+      </section>
+
+      <section class="write-us">
+        <h2 id="tell-me" >Написать мне</h2>
+        <form class="write-us-form" action="index.html" method="post">
+          <p class="write-us-form-item">
+            <label for="name">Ваше имя:</label>
+            <input type="text" name="name" value="" placeholder="Имя Фамилия"  required>
+          </p>
+          <p class="write-us-form-item">
+            <label for="email">Ваш e-mail:</label>
+            <input type="email" name="email" value="" placeholder="example@example.com" required>
+          </p>
+          <p class="write-us-form-item write-us-form-item-text">
+            <label for="write-us-form-text">Сообщение</label>
+            <textarea class="write-us-form-text-area" name="write-us-form-text" required minlength="10"> В свободной форме</textarea>
+          </p>
+          <p class="write-us-form-item write-us-form-item-for-button">
+            <label class="visually-hidden" for="button"></label>
+            <button class="button write-us-form-button" type="submit" name="button">Отправить</button>
+          </p>
+        </form>
+      </section>
+      </div>
+    </main>
+
+
+
+    <footer class="main-footer">
+      <section class="social-links">
+        <h2 class="visually-hidden">Я с социальных сетях</h2>
+        <ul>
+            <li>
+                <a class="social-link" href="#">ВК</a>
+            </li>
+            <li>
+                <a class="social-link" href="#">Телеграм</a>
+            </li>
+            <li>
+                <a class="social-link" href="#">Инстаграм</a>
+            </li>
+            <li>
+                <a class="social-link" href="#">Твиттер</a>
+            </li>
+        </ul>
+      </section>
+    </footer>
+
+
+    <script src="js/filter.js"></script>
+    <script src="js/tell-me.js"></script>
+
+  </body>
+</html>

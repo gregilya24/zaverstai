@@ -1,0 +1,16 @@
+.proba {
+
+  display: block;
+  width: 100%;
+  min-height: 100px;
+  background-color: red;
+  border: 1px solid black;
+}
+
+.my .proba:first-child {
+
+}
+
+.proba2:hover ~ .proba3 {
+  background-color: blue;
+}
